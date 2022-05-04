@@ -6,14 +6,14 @@ import { WidgetForm } from './WidgetForm';
 // group: 
 export function Widget() {
   // Metodo padrão de alteração de estado.
-  const [isWidgetOpen, setIsWidgetOpen] = useState(false);
-  function toggleWidgetVisibility() {
-    setIsWidgetOpen(!isWidgetOpen);
-  }
+  // const [isWidgetOpen, setIsWidgetOpen] = useState(false);
+  // function toggleWidgetVisibility() {
+  //   setIsWidgetOpen(!isWidgetOpen);
+  // }
 
 
   return (
-    <Popover className='absolute -bottom-4 right-4 md:bottom-8 md:right-8 flex flex-col items-end'>
+    <Popover className='absolute bottom-4 right-4 md:bottom-8 md:right-8 flex flex-col items-end'>
       <Popover.Panel className={'flex items-center justify-center'}>
         <WidgetForm />
       </Popover.Panel>
